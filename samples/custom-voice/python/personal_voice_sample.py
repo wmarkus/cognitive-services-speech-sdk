@@ -85,7 +85,7 @@ def clean_up(project_id: str, consent_id: str, personal_voice_id: str):
 
 
 region = 'eastus' # eastus, westeurope, southeastasia, westus2, eastasia
-key = 'your speech key here'
+key = '5acbbb5c57a8446888d605db1b7db1da'
 
 
 logging.basicConfig(filename="customvoice.log",

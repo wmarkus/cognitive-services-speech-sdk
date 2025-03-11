@@ -24,10 +24,7 @@ except ImportError:
     sys.exit(1)
 
 # Set up the subscription info for the Speech Service:
-# Replace with your own subscription key and service region (e.g., "centralus").
-# See the limitations in supported regions,
-# https://docs.microsoft.com/azure/cognitive-services/speech-service/how-to-use-conversation-transcription
-speech_key, service_region = "YourSubscriptionKey", "YourServiceRegion"
+speech_key, service_region = "5acbbb5c57a8446888d605db1b7db1da", "eastus"
 
 # This sample uses a wavfile which is captured using a supported Speech SDK devices (8 channel, 16kHz, 16-bit PCM)
 # See https://docs.microsoft.com/azure/cognitive-services/speech-service/speech-devices-sdk-microphone

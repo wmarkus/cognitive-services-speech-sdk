@@ -4,8 +4,8 @@ import azure.cognitiveservices.speech as speechsdk
 from openai import AzureOpenAI
 
 # Initialize speech recognition engine
-service_region = os.environ.get('SPEECH_REGION')
-speech_key = os.environ.get('SPEECH_KEY')
+service_region = "eastus" 
+speech_key = "5acbbb5c57a8446888d605db1b7db1da"
 speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
 speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config, language="en-us")
 

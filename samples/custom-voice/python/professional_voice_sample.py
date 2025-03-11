@@ -145,7 +145,7 @@ def deploy_model():
 
 
 region = 'eastus' # eastus, westeurope, southeastasia
-key = '<put your speech accout key here>'
+key = '5acbbb5c57a8446888d605db1b7db1da'
 
 logging.basicConfig(filename="customvoice.log",
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',

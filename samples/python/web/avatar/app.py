@@ -30,15 +30,14 @@ app = Flask(__name__, template_folder='.')
 socketio = SocketIO(app)
 
 # Environment variables
-# Speech resource (required)
-speech_region = os.environ.get('SPEECH_REGION') # e.g. westus2
-speech_key = os.environ.get('SPEECH_KEY')
+# Speech resources (required)
 speech_private_endpoint = os.environ.get('SPEECH_PRIVATE_ENDPOINT') # e.g. https://my-speech-service.cognitiveservices.azure.com/ (optional)
 speech_resource_url = os.environ.get('SPEECH_RESOURCE_URL') # e.g. /subscriptions/6e83d8b7-00dd-4b0a-9e98-dab9f060418b/resourceGroups/my-rg/providers/Microsoft.CognitiveServices/accounts/my-speech (optional, only used for private endpoint)
 user_assigned_managed_identity_client_id = os.environ.get('USER_ASSIGNED_MANAGED_IDENTITY_CLIENT_ID') # e.g. the client id of user assigned managed identity accociated to your app service (optional, only used for private endpoint and user assigned managed identity)
 # OpenAI resource (required for chat scenario)
 azure_openai_endpoint = os.environ.get('AZURE_OPENAI_ENDPOINT') # e.g. https://my-aoai.openai.azure.com/
-azure_openai_api_key = os.environ.get('AZURE_OPENAI_API_KEY')
+azure_openai_api_key = '5acbbb5c57a8446888d605db1b7db1da'
+speech_region = "eastus" # Replace the placeholder with actual service region
 azure_openai_deployment_name = os.environ.get('AZURE_OPENAI_DEPLOYMENT_NAME') # e.g. my-gpt-35-turbo-deployment
 # Cognitive search resource (optional, only required for 'on your data' scenario)
 cognitive_search_endpoint = os.environ.get('COGNITIVE_SEARCH_ENDPOINT') # e.g. https://my-cognitive-search.search.windows.net/

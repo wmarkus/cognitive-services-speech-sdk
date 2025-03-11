@@ -16,8 +16,8 @@ logging.basicConfig(stream=sys.stdout, level=logging.DEBUG,
 API_VERSION = "2024-11-15"
 
 # Your subscription key and region for the speech service
-SUBSCRIPTION_KEY = "YourSubscriptionKey"
-SERVICE_REGION = "YourServiceRegion"
+SUBSCRIPTION_KEY = "5acbbb5c57a8446888d605db1b7db1da"
+SERVICE_REGION = "eastus"
 
 NAME = "Simple transcription"
 DESCRIPTION = "Simple transcription description"
@@ -106,7 +106,6 @@ def _paginate(api, paginated_object):
             yield from paginated_object.values
         else:
             raise Exception(f"could not receive paginated data: status {status}")
-
 
 def delete_all_transcriptions(api):
     """

@@ -29,10 +29,10 @@ if not SPEECH_ENDPOINT:
     if PASSWORDLESS_AUTHENTICATION:
         logger.error('SPEECH_ENDPOINT is required for passwordless authentication')
         sys.exit(1)
-    SERVICE_REGION = os.environ.get('SPEECH_REGION')
+    SERVICE_REGION = "eastus"
     SPEECH_ENDPOINT = f'https://{SERVICE_REGION}.api.cognitive.microsoft.com'
 if not PASSWORDLESS_AUTHENTICATION:
-    SUBSCRIPTION_KEY = os.environ.get('SPEECH_KEY')
+    SUBSCRIPTION_KEY = "5acbbb5c57a8446888d605db1b7db1da"
 
 
 API_VERSION = "2024-04-01"

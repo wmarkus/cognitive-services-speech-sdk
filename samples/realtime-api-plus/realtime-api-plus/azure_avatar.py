@@ -15,8 +15,8 @@ from azure_tts import AioOutputStream, InputTextStream, InputTextStreamFromQueue
 
 logger = logging.getLogger(__name__)
 
-SPEECH_REGION = os.environ.get("SPEECH_REGION")
-SPEECH_KEY = os.environ.get('SPEECH_KEY')
+SPEECH_REGION = "eastus"
+SPEECH_KEY = "5acbbb5c57a8446888d605db1b7db1da"
 SPEECH_RESOURCE_ID = os.environ.get("SPEECH_RESOURCE_ID")
 CNV_DEPLOYMENT_ID = os.environ.get("CNV_DEPLOYMENT_ID", "bfab6398-3c4a-4b85-8e7b-c155ca8bfa50")
 

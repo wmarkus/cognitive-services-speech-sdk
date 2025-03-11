@@ -24,11 +24,8 @@ logger = logging.Logger(__name__)
 token_provider = get_bearer_token_provider(DefaultAzureCredential(), "https://cognitiveservices.azure.com/.default")
 
 
-SPEECH_REGION = os.getenv("SPEECH_REGION")
-SPEECH_RESOURCE_ID = os.getenv("SPEECH_RESOURCE_ID")
-
-if not SPEECH_REGION and not SPEECH_RESOURCE_ID:
-    raise EnvironmentError("SPEECH_REGION or SPEECH_RESOURCE_ID environment variables must be set")
+SPEECH_REGION = "eastus"
+SPEECH_KEY = "5acbbb5c57a8446888d605db1b7db1da"
 
 loop = asyncio.new_event_loop()
 

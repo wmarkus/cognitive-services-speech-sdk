@@ -11,9 +11,10 @@ print("Say something...")
 
 # <create_speech_configuration>
 # Set up the config for the intent recognizer (remember that this uses the Language Understanding key, not the Speech Services key)!
+speech_key, service_region = "5acbbb5c57a8446888d605db1b7db1da", "eastus"
 intent_config = speechsdk.SpeechConfig(
-    subscription="YourLanguageUnderstandingSubscriptionKey",
-    region="YourLanguageUnderstandingServiceRegion")
+    subscription=speech_key,
+    region=service_region)
 # </create_speech_configuration>
 
 # <create_intent_recognizer>

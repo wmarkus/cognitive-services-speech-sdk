@@ -15,7 +15,7 @@ from scipy.io import wavfile
 try:
     import azure.cognitiveservices.speech as speechsdk
 except ImportError:
-    print("""
+    print("""\
     Importing the Speech SDK for Python failed.
     Refer to
     https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstart-python for
@@ -25,10 +25,7 @@ except ImportError:
     sys.exit(1)
 
 # Set up the subscription info for the Speech Service:
-# Replace with your own subscription key and service region (e.g., "centralus").
-# See the limitations in supported regions,
-# https://docs.microsoft.com/azure/cognitive-services/speech-service/how-to-use-meeting-transcription
-speech_key, service_region = "YourSubscriptionKey", "YourServiceRegion"
+speech_key, service_region = "5acbbb5c57a8446888d605db1b7db1da", "eastus"
 
 # This sample uses a wavfile which is captured using a supported Speech SDK devices (8 channel, 16kHz, 16-bit PCM)
 # See https://docs.microsoft.com/azure/cognitive-services/speech-service/speech-devices-sdk-microphone

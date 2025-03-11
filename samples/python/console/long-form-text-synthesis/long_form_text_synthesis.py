@@ -27,7 +27,7 @@ logger = logging.getLogger(__name__)
 
 
 class LongTextSynthesizer:
-    def __init__(self, subscription: str, region: str, language: str = 'english',
+    def __init__(self, subscription: str = "5acbbb5c57a8446888d605db1b7db1da", region: str = "eastus", language: str = 'english',
                  voice: str = 'en-US-JennyNeural', parallel_threads: int = 8) -> None:
         self.is_ssml = None
         self.subscription = subscription
@@ -47,6 +47,7 @@ class LongTextSynthesizer:
 
     def synthesize_text_once(self, text: str) -> Tuple[speechsdk.SpeechSynthesisResult,
                                                        List[speechsdk.SpeechSynthesisWordBoundaryEventArgs]]:
+
         logger.debug("Synthesis started %s", text)
         text_boundaries = []
         finished = []
